@@ -40,6 +40,8 @@ model.generate(input_ids, **kwargs)
 Sources can be automatically inferred from the prompt by passing `auto_infer_sources={}` to the provider:
 
 ```
+from superbig.source import UrlSource
+...
 new_prompt = provider.with_pseudocontext(prompt, auto_infer_sources={UrlSource: true})
 ```
 
